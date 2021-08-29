@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Login Form</title>
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+
+    <section class="container">
+        <div class="formContainer">
+            <form>
+                <div class="formControl">
+                    <div class="info">
+                        <img src="user.svg" style="width: 15px;" alt="img not found">
+                        <select name="countrycode" id="ccode">
+                            <option value="+92">+92 Pakistan</option>
+                            <option value="+91">+91 India</option>
+                        </select>
+                    </div>
+                    <input type="number" placeholder="Please enter number">
+                </div>
+                <div class="formControl">
+                    <img src="lock.svg" style="width: 15px;" alt="img not found">
+                    <input type="password" id='pass' style="width: 95%;" placeholder="Please enter password">
+                    <div class="hide" onclick="showPass(event)"></div>
+                </div>
+                <div class="left">
+                    <input type="checkbox" id="checkbox" checked="true">
+                    <p>Remember Me?</p>
+                </div>
+                <div>
+                    <button type="submit">Login</button>
+                </div>
+                <div class="signup">
+                    <p>
+                        Haven't a account? 
+                        <a href="#">Sign up now</a>  
+                    </p>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <script src="app.js"></script>
+</body>
+
+</html>

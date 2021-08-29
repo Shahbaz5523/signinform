@@ -1,0 +1,113 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #151d31;
+}
+.container{
+    width: 100vw;
+    height: 100vh;
+}
+.container .formContainer{
+    display: flex;
+    max-width: 750px;
+    min-height: 100vh;
+    position: relative;
+    align-items: center;
+    flex-direction: column;
+    /* justify-content: center; */
+    background: url(https://h5.wpp-network91.com/static/img/bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+.container .formContainer form{
+    width: 95%;
+    padding: 25px 25px 0px 25px;
+    bottom: 70px;
+    overflow: hidden;
+    position: absolute;
+    border-radius: 5px;
+    background-color: white;
+}
+.formControl{
+    display: flex;
+    padding: 15px 16px;
+    align-items: center;
+    justify-content: flex-start;
+}
+.left{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+.formControl .info{
+    display: flex;
+    align-items: center;
+}
+.formControl select{
+    width: 47px;
+    border: none;
+    outline: none;
+    color: #222;
+    font-size: .875rem;
+}
+.formControl input{
+    border: none;
+    outline: none;
+    font-size: .8rem;
+    margin-left: 10px;
+}
+.left input#checkbox{
+    width: 20px;
+    height: 20px;
+}
+.left p , .signup p{
+    color: #333;
+    font-size: .8rem;
+    margin-left: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.signup p {
+    margin: 20px;
+    font-size: .9rem;
+    color: #333;
+}
+.signup a{
+    color:#22ba9e;
+    font-weight: 500;
+    text-decoration: none;
+}
+div button{
+    width: 100%;
+    border: none;
+    outline: none;
+    padding: 10px;
+    color: white;
+    margin: 10px;
+    font-size: 1.2rem;
+    border-radius: 20px;
+    background:linear-gradient(90deg,#22ba9e,#fe2f7f);
+}
+div.hide{
+    width: 20px;
+    height: 20px;
+    color: white;
+    cursor: pointer;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url(close.svg);
+}
+div.show{
+    width: 20px;
+    height: 20px;
+    color: white;
+    cursor: pointer;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url(eye.svg);
+}
